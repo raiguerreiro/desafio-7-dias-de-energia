@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desafio 7 Dias de Energia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffe4ec, #fff);
+      color: #333;
+    }
+
+    .app-container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    .header h1 {
+      font-size: 26px;
+      color: #d81b60;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 15px;
+      color: #666;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+      transition: 0.3s ease;
+    }
+
+    .card.locked {
+      opacity: 0.5;
+      pointer-events: none;
+      filter: grayscale(100%);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 17px;
+      color: #d81b60;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+
+    .cta {
+      display: none;
+      background: #d81b60;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin: 25px 0 40px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 6px 16px rgba(216, 27, 96, 0.3);
+    }
+
+    .cta:hover {
+      background: #ad1457;
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 22px;
+      }
+
+      .card h3 {
+        font-size: 16px;
+      }
+
+      .cta {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <div class="header">
+      <h1>Desafio 7 Dias de Energia 💪</h1>
+      <p>Complete uma missão por dia e sinta sua transformação!</p>
+    </div>
+
+    <div class="card">
+      <h3>Dia 1</h3>
+      <p>Beba 2L de água e caminhe por 15 minutos.</p>
+    </div>
+    <div class="card">
+      <h3>Dia 2</h3>
+      <p>Teste uma receita leve com 3 ingredientes naturais.</p>
+    </div>
+    <div class="card locked">
+      <h3>Dia 3</h3>
+      <p>Evite açúcar por 24h e durma antes das 22h.</p>
+    </div>
+    <div class="card locked">
+      <h3>Dia 4</h3>
+      <p>Prepare um chá calmante e evite tela antes de dormir.</p>
+    </div>
+    <div class="card locked">
+      <h3>Dia 5</h3>
+      <p>Pratique 10 minutos de respiração consciente.</p>
+    </div>
+    <div class="card locked">
+      <h3>Dia 6</h3>
+      <p>Anote 3 motivos de gratidão no seu dia.</p>
+    </div>
+    <div class="card locked">
+      <h3>Dia 7</h3>
+      <p>Revise seus avanços e escolha uma receita bônus favorita.</p>
+    </div>
+
+    <a class="cta" href="https://seulink.com/checkout" role="button" aria-label="Desbloquear o Plano Completo">
+      🎉 Desbloquear o Plano Completo
+    </a>
+  </div>
+
+  <script>
+    // Desbloqueio simulado para fins de preview
+    setTimeout(() => {
+      document.querySelectorAll('.locked').forEach(el => el.classList.remove('locked'));
+      document.querySelector('.cta').style.display = 'block';
+    }, 2500);
+  </script>
+
+</body>
+</html>
